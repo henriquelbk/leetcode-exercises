@@ -22,3 +22,21 @@ var longestConsecutive = function(nums) {
     }
     return longest;    
 };
+
+// 1. Two Sum
+
+var twoSum = function(nums, target) {
+    const pairIndex = {};
+
+    for (let i = 0; i <nums.length; i++) {
+        const num = nums[i];
+        if (target - num in pairIndex) {
+            return [i, pairIndex[target - num]]
+        }
+        pairIndex[num] = i;
+    }
+
+    // a função deve iterar sobre o array e, em cada posição, somar o integer com os valores das outras posições e comparar o resultado da soma com o target. Caso o resultado da soma seja igual, deve-se criar um array com as posições que, somadas, deram o target.
+
+    // outra forma de imaginar a resolução: subtraia o target do valor de cada posição, caso o resto seja um numero presente ne array, deve-se guardar a posição deste número no array de output.
+};
