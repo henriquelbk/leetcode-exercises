@@ -40,3 +40,20 @@ var twoSum = function(nums, target) {
 
     // outra forma de imaginar a resolução: subtraia o target do valor de cada posição, caso o resto seja um numero presente ne array, deve-se guardar a posição deste número no array de output.
 };
+
+// 268. Missing Number
+
+var missingNumber = function(nums) {
+    let n = nums.length;
+    let v = new Array(n+1).fill(-1);
+    
+    for (let i = 0; i < v.length; i++) {
+        v[nums[i]] = nums[i];
+    }
+    for (let i = 0; i < v.length; i++) {
+        if(v[i] == -1) return i;
+    }
+    return 0;
+    
+    // a função deve verificar o tamanho do array de inteiros únicos e, a partir deste tamanho, deve verificar se há algum número faltante para chegar no total verificado.
+};
