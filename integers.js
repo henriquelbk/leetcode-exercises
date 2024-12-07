@@ -57,3 +57,19 @@ var missingNumber = function(nums) {
     
     // a função deve verificar o tamanho do array de inteiros únicos e, a partir deste tamanho, deve verificar se há algum número faltante para chegar no total verificado.
 };
+
+// 217. Contains Duplicate
+
+var containsDuplicate = function(nums) {
+    
+    nums.sort((a, b) => a-b);
+    
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] === nums[i - 1]) {
+        return true;
+        }
+    }
+    return false;
+
+    // a função deve iterar sobre todos os elementos do array de integers e verificar se algum elemento é repetido. Se sim, retornar true, se não, false.
+};
