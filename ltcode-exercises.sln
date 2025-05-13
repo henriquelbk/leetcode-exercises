@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "initial-topics", "initial-topics", "{9BF97D00-43FB-56A5-FB2F-2C8149583FF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tipos-estruturados-csharp", "initial-topics\tipos-estruturados-csharp\tipos-estruturados-csharp.csproj", "{055060DB-384E-394E-1271-85BCEA3C32D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{055060DB-384E-394E-1271-85BCEA3C32D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055060DB-384E-394E-1271-85BCEA3C32D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055060DB-384E-394E-1271-85BCEA3C32D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055060DB-384E-394E-1271-85BCEA3C32D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{055060DB-384E-394E-1271-85BCEA3C32D9} = {9BF97D00-43FB-56A5-FB2F-2C8149583FF2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE260CE7-73AD-43B8-851A-51BB46721569}
+	EndGlobalSection
+EndGlobal
