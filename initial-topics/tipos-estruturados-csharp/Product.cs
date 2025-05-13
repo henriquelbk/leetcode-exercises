@@ -12,6 +12,14 @@ namespace MyApp
             Quantity =  quantity;
         }
 
+        public double total() {
+            return Price * Quantity;
+        }
+
+        public void updatePrice(double percentage) {
+            Price = Price * (1.0 + percentage / 100.0);
+        }
+
         public override string ToString()
         {
             return Name + ", $" + Price.ToString("F2") + ", " + Quantity;
